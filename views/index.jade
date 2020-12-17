@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  header
+    h1 Jogo da memoria
+
+  section
+      div#div1
+            img#img0.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 0)")
+            img#img1.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 1)")
+            img#img2.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 2)")
+            img#img3.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 3)")
+            img#img4.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 4)")
+            img#img5.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 5)")
+            img#img6.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 6)")
+            img#img7.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 7)")
+            img#img8.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 8)")
+            img#img9.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 9)")
+            img#img10.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 10)")
+            img#img11.img-memoria( src="/images/fundo.png" alt="desenho/animal" onclick="clicar(this, 11)")
+
+      div#div2
+        input#btn1(type="button" value="Jogar" onclick="prepararJogo()")
+
+      div#div3
+
+      div#div4
+        input(type="button" value="Jogar novamente?" onclick="jogarNovamente()")
+        
+    footer
+        p &copy;DevKiwm
+
+    script(src='/javascripts/index.js')
